@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./lib/socket.io.js"></script>
+    <script src="./app-v2.js"></script>
+    <script src="./lib/keyboard.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="root">
+    <div class="wrap">
+        <div class="wrap_label">
+            <span class="label_input">ПАРТІЯ</span>
+            <input class="use-keyboard-input input_mark input" type="text" maxlength="1" data-mark-mouns>
+        </div>
+        <div class="wrap_label">
+            <span class="label_input">ДАТА <br> ВИРОБНИЦТВА</span>
+            <input class="use-keyboard-input input_date-prod input" type="text" maxlength="5" data-date-prod>
+        </div>
+        <div class="wrap_label">
+            <span class="label_input">ДІЙСНИЙ ДО</span>
+            <input class="use-keyboard-input input_date-exp input" type="text" maxlength="7" data-date-exp>
+        </div>
+        <div class="wrap_label">
+            <span class="label_input">КОД<br>ПРОДУКТУ</span>
+            <input class="use-keyboard-input input_text1 input" type="text" maxlength="2" data-text1>
+        </div>
+        <div class="wrap_label">
+            <span class="label_input">КОД<br>ПАРТІЇ</span>
+            <input class="use-keyboard-input input_text1 input" type="text" maxlength="2" data-text2>
+        </div>
+        <div class="wrap_label">
+            <span class="label_input">ЛІЧИЛЬНИК</span>
+            <input class="use-keyboard-input input_count input" type="number" min="1" max="9999" maxlength="4"
+                data-count>
+        </div>
+        <div class="wrap_label">
+            <span class="label_input">ВИМІР <br> ВАГИ</span>
+            <input class="use-keyboard-input input_text1 input" type="text" maxlength="2" data-text3>
+        </div>
+        <div class="wrap_label">
+            <span class="label_input">КРАЇНА <br>ПРИЗНАЧЕННЯ</span>
+            <input class="use-keyboard-input input_text1 input" type="text" maxlength="2" data-text4>
+        </div>
+        <div class="wrap_label">
+            <span class="label_input">ДОДАТКОВА <br> ІНФОРМАЦІЯ</span>
+            <input class="use-keyboard-input input_num input" type="number" min="0" max="9" maxlength="1" id="num"
+                data-num>
+        </div>
+    </div>
+    <p class="print"></p>
+    <div class="wrap_button">
+        <button class="btn_start" type="button" data-btn-start>СТАРТ</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+    "port_printer": {
+        "path": "COM1",
+        "baudRate": 9600
+    },
+    "port_weight": {
+        "path": "COM5",
+        "baudRate": 9600
+    }
+}

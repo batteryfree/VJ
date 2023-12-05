@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #CCCCCC;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 25vh 1fr 10vh;
+}
+
+.wrap {
+  grid-area: header;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.input {
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.input_mark {
+  width: 40px;
+}
+
+.input_date-prod {
+  width: 120px;
+}
+
+.input_date-exp {
+  width: 180px;
+}
+
+.input_text1 {
+  width: 60px;
+}
+
+.input_num {
+  width: 60px;
+}
+
+.input_count {
+  width: 120px
+}
+
+.print {
+  font-size: 60px;
+  font-weight: 700;
+  background-color: #C5C068CC;
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.print--color {
+  background-color: #E4430DCC;
+}
+
+.wrap_button {
+  display: flex;
+  justify-content: right;
+  grid-area: footer;
+}
+
+.btn_start {
+  width: 200px;
+  height: 100px;
+  font-size: 50px;
+  background-color: #209920;
+  color: #FFFFFF;
+}
+
+.btn_start--color {
+  background-color: #992020;
+}
+
+.btn_start:hover {
+  background-color: #FFFFFF;
+  color: #0E0E50;
+}
+
+.wrap_label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10px;
+
+}
+
+.label_input {
+  font-size: 25px;
+}
+
+/* keyboard */
+.keyboard {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0;
+  background: #c5c068;
+  box-shadow: 0 0 50px #00000073;
+  user-select: none;
+  transition: bottom 0.4s;
+}
+
+.keyboard--hidden {
+  bottom: -100%;
+}
+
+.keyboard__keys {
+  text-align: center;
+}
+
+.keyboard__key {
+  height: 45px;
+  width: 6%;
+  max-width: 90px;
+  margin: 3px;
+  border-radius: 4px;
+  border: none;
+  background: #0000001E;
+  color: #ffffff;
+  font-size: 1.05rem;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+.keyboard__key:active {
+  background: #FFFFFF25;
+}
+
+.keyboard__key--wide {
+  width: 12%;
+}
+
+.keyboard__key--extra-wide {
+  width: 36%;
+  max-width: 500px;
+}
+
+.keyboard__key--activatable::after {
+  content: '';
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #00000064;
+  border-radius: 50%;
+}
+
+.keyboard__key--active::after {
+  background: #2bff00;
+}
+
+.keyboard__key--dark {
+  background: #00000025;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
